@@ -66,6 +66,7 @@ list:
 
 
 
+
 ---articles
 collection:
   path: /blog
@@ -75,8 +76,6 @@ collection:
   filterBy:
     featured:
       $eq: true
----
-
 ### *Featured Articles*
 
 Featured handcrafted articles about my thoughts and experiments.

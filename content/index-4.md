@@ -9,7 +9,7 @@ seo:
 slogan: Trusted By Fortune 500 Companies
 ---
 
-# *Carl Hanson*
+# *Burning Tree*
 
 ## <Typewriter>Full-Stack Developer</Typewriter>
 
@@ -79,3 +79,13 @@ list:
     icon:
       src: /icons/logo-4.svg
 ---
+
+---articles
+collection:
+  path: /blog
+  recordsPerPage: 6
+  limit: 6
+  sortBy: date
+  filterBy:
+    featured:
+      $eq: true

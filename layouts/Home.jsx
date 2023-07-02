@@ -7,9 +7,10 @@ import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
 
 const HeroPhoto = ({ main }) => (
+  
   <>
     {main.images?.[0] && (
-      <div className="with-back-plate hidden md:block">
+      <div className="with-back-plate  md:block">
         <Image
           src={main.images[0].src}
           width={main.images[0].width}

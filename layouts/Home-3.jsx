@@ -8,6 +8,7 @@ import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
 
 const HeroPhoto = ({ main }) =>
+// {console.log(main,'main')}
   main.images?.[1] && (
     <div className="relative mx-auto w-full text-center">
       <Reveal

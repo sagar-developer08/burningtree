@@ -18,6 +18,7 @@ const History = ({ title, list }) => (
         <React.Fragment key={`item-${i}`}>
           <div className="flex" key={`item-${i}`}>
             <div>
+              {/* <div>{item.icon.src}</div> */}
               <h6 className="pr-1 font-medium">{item.name}</h6>
               <div>{item.description}</div>
             </div>

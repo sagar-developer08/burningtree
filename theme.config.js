@@ -16,7 +16,7 @@ import { SlUser, SlBriefcase, SlEnvolope, SlTrophy } from 'react-icons/sl'
 
 export const menu = [
   {
-    name: 'Home (3)',
+    name: 'Home',
     slug: '/',
     Icon: TfiHome,
     number: 1,
@@ -32,11 +32,7 @@ export const menu = [
     slug: '/services',
     Icon: SlBriefcase,
   },
-  {
-    name: 'Articles',
-    slug: '/blog',
-    Icon: TfiPencilAlt,
-  },
+
   {
     name: 'Projects',
     slug: '/projects',
@@ -115,10 +111,10 @@ export const mdxConfig = {
 
 export const siteMetaData = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'http://localhost:3000',
-  authorName: 'Carl Hanson',
-  siteName: 'Carl Hanson',
-  defaultTitle: 'Carl Hanson Personal Site',
-  titleTemplate: 'Carl Hanson | %s',
+  authorName: 'Burning Tree',
+  siteName: 'Burning Tree',
+  defaultTitle: 'Burning Tree Personal Site',
+  titleTemplate: 'Burning Tree | %s',
   description: 'A short description goes here.',
   email: 'hello@example.com',
   locale: 'en_US',

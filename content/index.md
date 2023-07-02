@@ -7,33 +7,33 @@ seo:
 
 ---main
 images:
-  - src: /hero.jpg
+  - src: /robot.png
     alt: my photo
-  - src: /hero-mobile.jpg
+  - src: /round.gif
     alt: my photo
 ---
 
-# <Typewriter>Carl Hanson</Typewriter>
+# <Typewriter>Burning Tree</Typewriter>
 
-# *Web Developer* <span>&</span> *Growth Consultant*
+# *Software Development* <span>&</span> *Digital marketing*
 
 <Sep size={12} />
 
-Sometimes five Imprimaturs are seen together dialogue-wise in the
-piazza of one title-page, complimenting and ducking each to other with
-their shaven reverences, whether the author, who stands by in
-perplexity at the foot of his epistle, shall to the press or to the
-sponge.
+At Burning Tree, we are more than just a company - we are a force that ignites growth and fuels success. 
+As a forward-thinking organization, we understand the importance of staying ahead in today's rapidly evolving business landscape. 
+That's why we specialize in providing cutting-edge solutions that empower businesses to soar to new heights.
 
 
 
 ---achievements
-- number: 6+
-  text: Years of experience
+- number: 4+
+  text: Years of Industry
 - number: 60+
   text: Projects Completed
-- number: 5
-  text: OpenSource Libraries
+- number: 100%
+  text: Satisfactory Clients
+- number: 40+
+  text: 40+ Team Member
 ---
 
 
@@ -41,7 +41,7 @@ sponge.
 ---cta
 ---
 <Button href="/contact" size="lg">
-  Download Resume
+  Get in Touch 
 </Button>
 
 
@@ -51,14 +51,24 @@ title: Trusted By
 list:
   - name: Company 1
     icon:
-      src: /icons/logo-1.svg
+      src: /icons/HDFC_logo_cjlf2d.svg
   - name: Company 2
     icon:
-      src: /icons/logo-3.svg
+      src: /icons/primary_gaide4.svg
   - name: Company 3
     icon:
-      src: /icons/logo-3.svg
+      src: /icons/Edelweiss_Group_logo.svg
   - name: Company 4
     icon:
       src: /icons/logo-4.svg
 ---
+
+---articles
+collection:
+  path: /blog
+  recordsPerPage: 6
+  limit: 6
+  sortBy: date
+  filterBy:
+    featured:
+      $eq: true

@@ -8,27 +8,40 @@ import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
 import { FiThumbsUp } from 'react-icons/fi'
 
-const HeroPhoto = ({ main }) =>
-  main.images?.[1] && (
-    <div className="relative mx-auto w-full max-w-md text-center">
+const HeroPhoto = ({ main }) => (
+  <div className="relative mx-auto w-full max-w-md text-center">
+    <div className="absolute inset-0 z-0">
       <Image
         src={main.images[1].src}
         width={main.images[1].width}
         height={main.images[1].height}
         alt={main.images[1].alt}
-        animation="zoom-out"
-        className="mx-auto"
-        priority
+        className="object-cover w-full h-full"
       />
-      <Sep size={12} />
     </div>
-  )
+    <div className="relative z-10 mx-auto">
+      <div className="md:ml-20">
+        <Image
+          src={main.images[0].src}
+          width={main.images[0].width}
+          height={main.images[0].height}
+          alt={main.images[0].alt}
+          animation="zoom-out"
+          className="mx-auto"
+          priority
+        />
+      </div>
+    </div>
+    <Sep size={12} />
+  </div>
+);
+
 
 const HeroAbout = ({ main }) => (
   <>
     <div className="inline-flex items-center justify-center space-x-2 bg-accent py-2 px-4 text-accent-50">
-      <FiThumbsUp className="text-xl" />
-      <small className="font-bold">{main.slogan}</small>
+      {/* <FiThumbsUp className="text-xl" /> */}
+      <small className="font-bold"><h2>We Make It possible</h2></small>
     </div>
     <Sep size={12} />
     <Reveal
@@ -94,7 +107,7 @@ const Layout = ({ main = {}, articles = {}, cta = {}, achievements = [], compani
       <Sep size={24} />
       <Articles articles={articles} />
       <div className="hidden md:block">
-        <Sep size={24} />
+        <Sep size={12} />
         <Companies {...companies} />
       </div>
     </div>
