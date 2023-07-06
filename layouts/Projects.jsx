@@ -10,7 +10,7 @@ const Layout = () => {
   return(
     <>
       <P1/>
-      <br/><br/>
+      
       <Carousel/>
     </>
   )
